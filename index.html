@@ -3,6 +3,16 @@
   <script type="text/javascript">
     function starthere() {
       document.getElementById("demo").innerHTML ="Hello JavaScript!";
+      
+      for (i = 0; i < 10; i++) {
+        createAdditionProblem(i);
+      }
+    }
+    function createAdditionProblem(msg) {
+      var p = document.getElementById("demo");
+      var x = document.createElement("div");
+      x.innerHtml = msg;
+      p.appendChild(x);
     }
   </script>
 </head>
