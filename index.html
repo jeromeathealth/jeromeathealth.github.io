@@ -1,10 +1,12 @@
 <html>
 <head>
   <script type="text/javascript">
-    document.getElementById("demo").innerHTML ="Hello JavaScript!";
+    function starthere() {
+      document.getElementById("demo").innerHTML ="Hello JavaScript!";
+    }
   </script>
 </head>
-<body>
+<body onload=starthere()>
 <p id="demo">This is a test page.</p>
 </body>
 </html>
